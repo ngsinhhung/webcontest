@@ -198,7 +198,15 @@ html {
 
 .content-container-item {
     text-align: center;
-    /* margin: 0 30px 30px 30px; */
+}
+
+.content-container-item h3 {
+    color: #fdb800;
+    transition: .3s ease-in-out;
+}
+
+.content-container-item:hover h3{
+    transform: translateY(-15px);
 }
 
 .content-img {
