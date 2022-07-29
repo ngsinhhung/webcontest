@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* common */
+.row {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: calc(100%/2);
+}
+
+.col-third {
+    width: calc(100%/3);
+}
+
+#header {
+    position: relative;
+}
+
+#header .header-top {
+    color: #fff;
+    height: 80px;
+    padding: 10px 32px;
+    background-color: #fff;
+    /* float: right; */
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+
+.logo-header img {
+    width: 50%;
+    height: auto;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.contact-header {
+    font-size: 17px;
+    display: inline-block;
+}
+
+.contact-header > p > i {
+    margin-right:10px;
+    font-size: 17px;
+}
+
+.header-top .social-list{
+    float: right;
+    font-size: 28px;
+}
+
+.header-top .social-list > a {
+    padding: 0 5px;
+    color:#278ac7;
+    text-decoration: none;
+}
+
+.header-top .social-list a:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.header-bottonm {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: left; */
+    background-color: #fdb800;
+    height: 46px;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav li {
+    display: block;
+}
+
+#nav > li {
+    display: inline-block;
+    margin-left: -6.5px;
+}
+
+#nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 46px;
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav li:hover > a {
+    opacity: 0.6;
+}
+
+.sub-nav > li > a {
+    color: #fff !important;
+}
+
+#nav .sub-nav {
+    display: none;
+    font-weight: 700;
+    background-color: #fdb800;
+    border-radius: 0 0 4px 4px;
+    top: 100%;
+    position: absolute;
+    box-shadow: 0 0 6px rgba(0, 0, 9, 0.5);
+    z-index: 1;
+}
+
+#nav .sub-nav a {
+    padding: 2px 23px;
+    margin-left: -10px;
+}
+
+#nav li:hover .sub-nav {
+    display: block;
+}
+
+#slider {
+    /* margin-top: 46px; */
+    padding-top: 50%;
+    background: url(../img/test2.jpg) top center/ cover no-repeat;
+    position: relative;
+}
+
+#slider .slider1 {
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.slider1 .slider-header {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.slider1 .slider-desc {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#content .content-section {
+    padding-top: 64px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#content .content-heading {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fdb800;
+    margin: 10px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#content .about-us-para{
+    text-align: justify;
+}
+
+.content-container {
+    padding-top: 70px;
+}
+
+.content-container-item {
+    text-align: center;
+    /* margin: 0 30px 30px 30px; */
+}
+
+.content-img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 84px;
+    height: auto;
+}
+
+.content-container h3 {
+    text-transform: uppercase;
+    /* font-size: 25px; */
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content-container p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+.block {
+    padding-top: 60px !important;
+    margin-bottom: 20px;
+}
+
+#content .booking1 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.booking1 {
+    margin-top: 30px;
+    background: url(../img/bg-sea.jpg) top center / cover no-repeat;
+}
+
+.footer2,
+.footer-container,
+.content-booking {
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.booking1 .content-decs {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.booking1 .travel {
+    float: right;
+    width: calc(100%/4);
+    padding: 0 8px;
+}
+
+.travel-img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    border-radius: 10px 10px 0 0;
+}
+
+.travel:hover .travel-img{
+    opacity: .8;
+}
+
+.news .news-body,
+.travel .travel-body {
+    background-color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 3px 12.09px 0.91px rgb(105 105 105 / 13%);
+}
+
+.travel-body h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #fdb800;
+}
+
+.travel-body p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.travel-body .travel-body-price {
+    color: red;
+}
+
+
+.contact::after,
+.booking1::after,
+.news-container::after,
+.content-booking::after,
+.footer-container::after,
+.content-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.css-btn {
+    padding: 7px 18px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.travel .travel-pay-btn {
+    color: #fff;
+    display: inline-block;
+    border: none;
+    background-color: #fdb800;
+}
+
+.travel-body .more-infor {
+    float: right;
+    color: #fdb800;
+    background-color: #fff;
+    font-weight: 600;
+    border: 1px solid #fdb800;
+}
+
+.form-btn-submit:hover,
+.travel .travel-pay-btn:hover,
+.travel-body .more-infor:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+
+.contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+.contact-infor {
+    float: left;
+    margin-top: -15px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: calc(100%/2);
+}
+
+.form-name, .form-email {
+    margin-bottom: 10px;
+    padding: 10px 61px 10px 10px;
+}
+
+.form-email {
+    margin-left: 20px;
+}
+.form-nd {
+    padding: 8px 0 30px 8px;
+}
+
+.form-btn-submit {
+    float: right;
+    margin: 15px 0;
+    padding: 8px 19px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fdb800;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-infor h3 {
+    font-size: 18px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    color: #fdb800;
+}
+
+.contact-infor p {
+    font-size: 15px;
+    padding-bottom: 10px; 
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+/* css news */
+.news-container {
+    background-color: rgba(0, 0, 0, .05);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.content-news h2 {
+    padding-bottom: 18px;
+}
+
+.news-item .news {
+    float: right;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.new-img {
+    display: block;
+    width: 100%;
+    height: 225px;
+}
+
+.news a {
+    text-decoration: none;
+}
+
+.news-body h3 {
+    color: #ce8f09;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 21.5px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.news-body .news-time{
+    opacity: 0.6;
+}
+
+.news-time i {
+    margin-right: 10px;
+}
+
+.news-body p {
+    color: #000;
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 13px;
+}
+
+.news:hover .news-content {
+    color: #ce8f09;
+}
+
+#footer {
+    background-color: #fdb800;
+}
+
+.footer-container {
+    padding: 64px 0;
+}
+
+
+.footer-list ul {
+    list-style: none;
+}
+
+.fl-left {
+    float: left;
+}
+
+.list-heading {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.list-heading-boder {
+    width: 160px;
+    height: 2px;
+    background-color: #fff;
+    margin: 12px 0;
+}
+
+.footer-list li {
+    padding: 4px 0;
+    color: #fff;
+}
+
+.footer-social-list a i {
+    color: #fff;
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.footer-social-list a:hover {
+    opacity: 0.6;
+}
+
+.footer2 {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-top: 1px solid #ccc;
+}
+
