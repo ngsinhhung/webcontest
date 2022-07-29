@@ -71,6 +71,11 @@
     margin-left: 26px;
 }
 
+.red {
+    color: red;
+}
+
+
 .notice p,
 .notice li,
 .infor-items li {
@@ -131,9 +136,11 @@
     font-size: 18px;
 }
 
-.pbottom25,
-.content-part2 p {
+.pbottom25 {
     padding-bottom: 25px;
+}
+.content-part2 p {
+    font-size: 18px;
 }
 
 .notice-text {
