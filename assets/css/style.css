@@ -28,6 +28,8 @@ html {
     width: calc(100%/3);
 }
 
+
+/* header */
 #header {
     position: relative;
 }
@@ -43,8 +45,6 @@ html {
     right: 0;
     width: 100%;
 }
-
-
 
 .logo-header img {
     width: 50%;
@@ -63,26 +63,7 @@ html {
     font-size: 17px;
 }
 
-.header-top .social-list{
-    float: right;
-    font-size: 28px;
-}
-
-.header-top .social-list > a {
-    padding: 0 5px;
-    color:#278ac7;
-    text-decoration: none;
-}
-
-.header-top .social-list a:hover {
-    opacity: 0.6;
-    cursor: pointer;
-}
-
 .header-bottonm {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: left; */
     background-color: #fdb800;
     height: 46px;
     z-index: 1;
@@ -141,6 +122,12 @@ html {
     display: block;
 }
 
+#header {
+    display: none;
+}
+
+/* slide */
+
 #slider {
     /* margin-top: 46px; */
     padding-top: 50%;
@@ -176,6 +163,7 @@ html {
     text-align: center;
     font-size: 16px;
     line-height: 1.5;
+    background-color: #fff;
 }
 
 #content .content-heading {
@@ -188,16 +176,16 @@ html {
     text-transform: uppercase;
 }
 
-#content .about-us-para{
-    text-align: justify;
-}
-
-.content-container {
-    padding-top: 70px;
-}
 
 .content-container-item {
+    display: block;
+    width: 31%;
     text-align: center;
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 30px 0;
+    height: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .content-container-item h3 {
@@ -224,9 +212,10 @@ html {
 }
 
 .content-container p {
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
     line-height: 1.5;
+    color: #9c9c9c;
 }
 
 
@@ -242,7 +231,6 @@ html {
 }
 
 .booking1 {
-    margin-top: 30px;
     background: url(../img/bg-sea.jpg) top center / cover no-repeat;
 }
 
@@ -371,14 +359,12 @@ html {
 
 .form-name, .form-email {
     margin-bottom: 10px;
-    padding: 10px 61px 10px 10px;
+    padding: 10px 50px 10px 10px;
 }
 
-.form-email {
-    margin-left: 20px;
-}
 .form-nd {
     padding: 8px 0 30px 8px;
+    width: 100%
 }
 
 .form-btn-submit {
@@ -406,10 +392,6 @@ html {
 
 .mr-10 {
     margin-right: 10px;
-}
-
-.contact-form {
-    margin-top: 40px;
 }
 
 /* css news */
