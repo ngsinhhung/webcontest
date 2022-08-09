@@ -12,39 +12,30 @@
 </head>
 <body>
     <div id="home">
-        <div id="header">
-            <div class="header-top">
-                <div class="contact-header">
-                    <div class="logo-header">
-                        <img src="./assets/img/logo/logo-tau.png" alt="LOGO">
-                    </div>
-                </div>
+        <nav id="nav">
+            <div class="logo">
+                <img src="./assets/img/logo/logo-tau.png" alt="LOGO">
             </div>
-            <div class="header-bottonm" id="myHeader">
-                <ul id="nav">
-                    <li><a href="#"> <b>trang chủ</b></a></li>
-                    <li><a href="#about-us"> <b>giới thiệu</b> </a></li>
-                    <li>
-                        <a href="#"> 
-                            <b>đặt vé</b>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul class="sub-nav">
-                            <li><a href="#book-tickets1">Phan Thiết <i class="fa-solid fa-arrow-right-long"></i> Phú Quý</a></li>
-                            <li><a href="#book-tickets2">Phú Quý <i class="fa-solid fa-arrow-right-long"></i> Phan Thiết</a></li>
-                        </ul>
 
-                    </li>
-                    <li><a href="#newspaper"> <b>tin tức</b> </a></li>
-                    <li><a href=""> <b>đối tác</b> </a></li>
-                    <li><a href="#contact-us"> <b>liên hệ</b> </a></li>
-                </ul>
-            </div>
-        </div>
+            <ul>
+                <li><a href="#"> <b>trang chủ</b></a></li>
+                <li><a href="#about-us"> <b>giới thiệu</b> </a></li>
+                <li>
+                    <a href="#"> 
+                        <b>đặt vé</b>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="sub-nav">
+                        <li><a href="#book-tickets1">Phan Thiết <i class="fa-solid fa-arrow-right-long"></i> Phú Quý</a></li>
+                        <li><a href="#book-tickets2">Phú Quý <i class="fa-solid fa-arrow-right-long"></i> Phan Thiết</a></li>
+                    </ul>
 
-        <div id="header-new">
-            
-        </div>
+                </li>
+                <li><a href="#newspaper"> <b>tin tức</b> </a></li>
+                <li><a href=""> <b>đối tác</b> </a></li>
+                <li><a href="#contact-us"> <b>liên hệ</b> </a></li>
+            </ul>
+        </nav>
 
         <div id="slider">
             <div class="slider1">
@@ -297,7 +288,7 @@
                 </div>
             </div>
             <div class="footer2">
-                <p>Bản quyền thuộc về sinhhungmaths@gmail.com</p>
+                <p>Contact: sinhhungmaths@surport.com</p>
             </div>  
         </div>
 
@@ -411,6 +402,18 @@
     
     <script src="./assets/java/main.js"></script>
     <script src="./assets/java/modal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if($(window).scrollTop()) {
+                $('nav').addClass('sticky');
+            }
+            else{
+                $('nav').removeClass('sticky');
+            }
+        })
+    </script>
+
 
 </body>
 </html>

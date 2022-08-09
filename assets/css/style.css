@@ -29,7 +29,7 @@ html {
 }
 
 
-/* header */
+/* header 
 #header {
     position: relative;
 }
@@ -39,7 +39,6 @@ html {
     height: 80px;
     padding: 10px 32px;
     background-color: #fff;
-    /* float: right; */
     display: inline-block;
     top: 0;
     right: 0;
@@ -126,8 +125,94 @@ html {
     display: none;
 }
 
-/* slide */
+ */
 
+/* header new */
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 79px;
+    padding: 10px 100px;
+    transition: .5s;
+    z-index: 1;
+}
+
+#nav.sticky {
+    background-color: rgba(255, 255, 255, .8);
+    height: 75px;
+    padding: 0 50px;
+}
+
+#nav .logo{
+    float: left;
+}
+
+#nav .logo img{
+    width: 200px;
+    height: auto;
+    transition: .5s;
+}
+
+#nav.sticky .logo img{
+    margin-top: 15px;
+    width: 140px;
+    height: auto;
+}
+
+#nav ul {
+    float: right;
+    display: flex;
+}
+
+#nav ul li {
+    list-style: none;
+}
+
+#nav li {
+    display: block;
+}
+
+#nav ul li a {
+    display: inline-block;
+    line-height: 69px;
+    color: #262626;
+    padding: 5px 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav li:hover > a{
+    color: #ce8f09;
+}
+
+#nav .sub-nav{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    margin-top: -4px;
+    background-color: #fff;
+}
+
+#nav.sticky .sub-nav{
+    background-color: rgb(255, 255, 255,0.8);
+}
+
+#nav .sub-nav li a {
+    padding: 0 10px;
+    margin: -5px 0;
+}
+
+#nav li:hover .sub-nav {
+    display: block;
+    transition: ease-in-out .5s;
+}
+
+
+/* slide */
 #slider {
     /* margin-top: 46px; */
     padding-top: 50%;
@@ -192,6 +277,8 @@ html {
     color: #fdb800;
     transition: .3s ease-in-out;
 }
+
+
 
 .content-container-item:hover h3{
     transform: translateY(-15px);
