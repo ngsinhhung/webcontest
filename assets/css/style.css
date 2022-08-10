@@ -16,6 +16,12 @@ html {
     margin-right: auto;
 }
 
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .col-full {
     width: 100%;
 }
@@ -223,6 +229,7 @@ html {
 }
 
 .footer2,
+.about-us-container,
 .footer-container,
 .content-booking {
     max-width: 1200px;
@@ -285,6 +292,7 @@ html {
 .news-container::after,
 .content-booking::after,
 .footer-container::after,
+.about-us-container:after,
 .content-container::after {
     content: "";
     display: block;
@@ -323,14 +331,106 @@ html {
     cursor: pointer;
 }
 
-.col {
+/* css about_us part */
+.about-us-container{
+    padding: 120px 0px;
+}
+
+.about-us-img img{
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-us-img .img2{
+    margin-top: 10%;;
+}
+
+.about-us {
+    background: url(../img/about_bg.jpg) top center / cover no-repeat;
+}
+
+.about-us-content {
+    padding: 0 15px;
+}
+
+.about-content {
+    padding: 22px 0 22px 10px;
+    color: #fff;
+}
+
+.about-heading p{
+    color: #fdb800;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.about-heading h1{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+
+.about-us-item {
+    display: flex;
     float: left;
-    padding-left: 8px;
-    padding-right: 8px;
+    width: calc(100%/4);
+    font-size: 1.2rem;
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.about-us-item i{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 1.2rem;
+    background-color: #262626;
+    border-radius: 50%;
+    color: #fdb800;
+    text-align: center;
+    margin-right: 10px;
+    transform: translateY(-2px);
+    transition: all .3s ease-in-out;
+}
+
+.about-us-item:hover i{
+    background-color: #fdb800;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.about-content a{
+    float: left;
+    border: none;
+    color: #fff;
+    font-weight: 720;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 12px 20px;
+    text-decoration: none;
+    background-color: #ce8f09;
+    transition: all .3s ease-in-out;
+}
+
+.about-content a:hover {
+    background-color: #000;
+    transition: all .3s ease-in-out;
 }
 
 
 
+/* contact */
 .contact {
     padding-top: 64px;
     padding-bottom: 64px;
