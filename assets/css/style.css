@@ -292,7 +292,9 @@ html {
 .news-container::after,
 .content-booking::after,
 .footer-container::after,
-.about-us-container:after,
+.about-us-container::after,
+.contact-us-content::after,
+.contact-us-container::after,
 .content-container::after {
     content: "";
     display: block;
@@ -314,7 +316,15 @@ html {
     display: inline-block;
     border: none;
     background-color: #fdb800;
+    transition: all .3s ease-in-out;
 }
+
+.travel .travel-pay-btn:hover {
+    background-color: #000;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
 
 .travel-body .more-infor {
     float: right;
@@ -324,8 +334,8 @@ html {
     border: 1px solid #fdb800;
 }
 
+
 .form-btn-submit:hover,
-.travel .travel-pay-btn:hover,
 .travel-body .more-infor:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -428,59 +438,134 @@ html {
     transition: all .3s ease-in-out;
 }
 
-
-
-/* contact */
-.contact {
-    padding-top: 64px;
-    padding-bottom: 64px;
-
+/* news contact */
+.row-contact  {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.contact-infor {
-    float: left;
-    margin-top: -15px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: calc(100%/2);
+.contact-us-container{
+    padding: 120px 0px;
 }
 
-.form-name, .form-email {
-    margin-bottom: 10px;
-    padding: 10px 50px 10px 10px;
+.contact-us-content {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.form-nd {
-    padding: 8px 0 30px 8px;
-    width: 100%
-}
-
-.form-btn-submit {
-    float: right;
-    margin: 15px 0;
-    padding: 8px 19px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #fdb800;
-    border: none;
-    border-radius: 4px;
-}
-
-.contact-infor h3 {
+.contact-us-heading{
     font-size: 18px;
-    padding: 10px 0;
-    text-transform: uppercase;
+    font-weight: 600;
     color: #fdb800;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
-.contact-infor p {
+.pd-48{
+    padding: 48px;
+}
+
+.contact-us-content-item {
+    background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+}
+
+.contact-us-content-item h3{
+    color: #fff;
+    font-size: 28px;
+    margin-left: 15px;
+    margin-bottom: 24px;
+}
+
+.contact-us-content-item .input-item{
+    padding: 0 15px;
+    margin-bottom: 16px;
+}
+
+.contact-us-content-item input{
+    display: block;
+    border: 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    outline: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+}
+
+.input-message{
+    width: 100%;
+    border: 0;
     font-size: 15px;
-    padding-bottom: 10px; 
+    margin-top: 16px;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
 }
 
-.mr-10 {
-    margin-right: 10px;
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ccc;
 }
+
+.btn-submit {
+    margin-top: 50px;
+}
+
+.btn-submit a{
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5151E5;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.btn-submit a:hover{
+    background-color: #000;
+    transition: all .3s ease-in-out;
+}
+
+
+.contact-us-infor-item h3 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.infor-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.infor-list-item i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.infor-list-item div{
+    width: calc(100% - 40px);
+}
+
+.infor-list-item span {
+    color: #666666;
+}
+
 
 /* css news */
 .news-container {
