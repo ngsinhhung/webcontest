@@ -566,6 +566,9 @@ html {
     color: #666666;
 }
 
+.input-message {
+    resize: none;
+}
 
 /* css news */
 .news-container {
